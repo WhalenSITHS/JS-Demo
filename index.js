@@ -93,3 +93,48 @@ let z = function add(x, y) {
 };
 z(1, 11);
 console.log(z(1, 11)); */
+////////////////////////////////////Scoping
+//let x = "x";
+//const z = "z"; //99% of the time
+/* const hello = function() {
+  alert("hello");
+};
+const bye = function() {
+  alert("bye");
+  alert("bye");
+  alert("bye");
+  alert("bye");
+  alert("bye");
+  alert("bye");
+  alert("bye");
+};
+
+function beatles() {
+  hello();
+  bye();
+  hello();
+  bye();
+}
+beatles(); */
+
+//global or window scope
+
+/* function hello() {
+  const name = "Jaiyu";
+  console.log(name);
+} */
+/* hello();
+makeFunc();
+ */
+
+function makeFunc() {
+  //function scope
+  const name = "Sun";
+  function displayName() {
+    alert(name); //still has access to outer variable name
+  }
+  return displayName; //returning the inner function
+}
+
+const myFunc = makeFunc();
+myFunc();
