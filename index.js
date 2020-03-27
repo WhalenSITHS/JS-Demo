@@ -127,7 +127,7 @@ beatles(); */
 makeFunc();
  */
 
-function makeFunc() {
+/* function makeFunc() {
   //function scope
   const name = "Sun";
   function displayName() {
@@ -138,3 +138,35 @@ function makeFunc() {
 
 const myFunc = makeFunc();
 myFunc();
+ */
+
+//////Arrays
+/* const names = ["Michelle", "Edis", "Richard", "Vincent", "Gisele"];
+
+names.forEach(name => console.log(name)); */
+//arrow function 1) Always returned 2) this is changed
+const students = [
+  "Riya",
+  "Omor",
+  "Alan",
+  "Jaiyu",
+  "Michael",
+  "Lisa",
+  "Richard"
+];
+
+//Filter above array for all students whose name contains less than 5 characters
+
+///challenge 2
+//1) does it "include" "Junshen"
+//2) check for "alan" or "savva" "some"
+
+/////Spread Operator ready?
+/* const numbers = [1, 2, 3];
+const add = function(x, y, z) {
+  return x + y + z;
+};
+console.log(add(...numbers)); */
+const numbers = [1, 50, 34, 75, 11];
+const biggestNum = Math.max(...numbers);
+console.log(biggestNum);
