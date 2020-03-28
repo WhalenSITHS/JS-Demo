@@ -45,7 +45,7 @@ let age = 15; */
 console.log(age <= 15 && age > 19); */
 
 //////If statements
-let school = "High Sc";
+/* let school = "High Sc";
 if (school === "Elementary") {
   console.log("You are in k-5");
 } else if (school === "Middle") {
@@ -55,3 +55,72 @@ if (school === "Elementary") {
 }
 let ron = "Ron";
 console.log(ron !== "Ema");
+ */
+
+///////functions
+/* function test() {
+  console.log("TEST");
+}
+test(); */
+
+/* function argument(argument) {
+  console.log(argument);
+}
+argument("argument"); */
+
+/* const add = function(x, y) {
+  return x + y; //immediately ends the function
+};
+console.log(add(10, 3)); */
+/* const hello = function() {
+  alert("hello");
+};
+const bye = function() {
+  alert("Bye");
+};
+
+const beatles = function() {
+  hello();
+  bye();
+  hello();
+  bye();
+};
+beatles();
+ */
+
+////scope
+/* function makeFunc() {
+  //closure
+  //function scope
+  const name = "Sun";
+  function displayName() {
+    alert(name); //still has access to outer variable name
+  }
+  return displayName; //returning the inner function
+}
+
+const myFunc = makeFunc(); //closure
+myFunc();
+ */
+
+///////arrays
+const names = [
+  "Diego",
+  "Frid",
+  "Christian",
+  "Valerie",
+  "Haoran",
+  "Brian",
+  "Caroline"
+];
+//names.push("Caroline");
+//names.forEach(name => console.log(name));
+/* names.filter(//somecode).forEach(el () => console.log(el))
+ */
+////spread operator
+const numbers = [1, 2, 3, 4, 43957690];
+
+const add = function(x, y, z, f, g) {
+  return x + y + z + f + g;
+};
+console.log(add(...numbers));
