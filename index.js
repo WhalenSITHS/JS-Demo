@@ -104,7 +104,7 @@ myFunc();
  */
 
 ///////arrays
-const names = [
+/* const names = [
   "Diego",
   "Frid",
   "Christian",
@@ -112,15 +112,16 @@ const names = [
   "Haoran",
   "Brian",
   "Caroline"
-];
+]; */
 //names.push("Caroline");
 //names.forEach(name => console.log(name));
 /* names.filter(//somecode).forEach(el () => console.log(el))
  */
 ////spread operator
-const numbers = [1, 2, 3, 4, 43957690];
+/* const numbers = [1, 2, 3, 4, 43957690];
 
 const add = function(x, y, z, f, g) {
   return x + y + z + f + g;
 };
 console.log(add(...numbers));
+ */
