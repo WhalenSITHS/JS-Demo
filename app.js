@@ -68,7 +68,7 @@ if (kristyLactInt === true && baoBaoLactint == true) {
 }
  */
 
-let temp = 72;
+/* let temp = 72;
 if (temp < 68) {
   console.log("Too Cold");
 } else if (temp >= 68 && temp <= 72) {
@@ -78,3 +78,71 @@ if (temp < 68) {
 } else {
   console.log("Too Hot");
 }
+ */
+
+//console.log("Shut Up!");
+
+/* function test() {
+  console.log("I'm a function");
+}
+test(); */
+
+// const add = function(x, y) {
+//   return x + y; //return ends the function
+// };
+
+//console.log(add(100, 20));
+//const name = "Richard"; //cannot re-define const
+
+/* const hello = function() {
+  console.log("Hello");
+};
+const bye = function() {
+  console.log("Bye");
+};
+const hiBye = function() {
+  hello();
+  bye();
+  hello();
+  bye();
+};
+hiBye(); */
+
+//const name = "Thurushi"; //global variable or global space
+
+/* function displayName() {
+  const name = "Kelly"; //local or function scope
+
+  function sun() {
+    console.log(name); //inner function has access to outer function
+  }
+
+  return sun;
+}
+const myFunc = displayName();
+myFunc(); */
+//closure
+
+///////Arrays
+/* const names = ["Aarthi", "Vicky", "Vincent", "Doyle", "Kelly"];
+names.forEach(el => console.log(el)); */
+
+///spread operator
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const add = function(x, y, z, a, b, c) {
+//   return x + y + z + a + b + c;
+// };
+// console.log(add(...numbers));
+/*  */
+let students = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa", "Richard"];
+
+///filter out all students whose names contain <5 characters
+/* const newArr = students
+  .push()
+  .forEach()
+  .map();
+ */
+
+//"includes" junshen
+
+//Alan or Savva included in "some"
