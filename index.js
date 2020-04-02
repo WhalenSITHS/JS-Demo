@@ -1,172 +1,72 @@
-/* let string = "string";
-const edis = "Edis";
-let sentence = "Hello " + "Vicky";
-let sentence2 = " and also Angel";
-//let combine = sentence + sentence2;
-let combine = `${sentence}${sentence2}`; //ES2015
-
-let student1 = "Sandra";
-let student2 = "Kelly";
-let courseName = "AP CSP";
-let teacherName = "Whalen"; */
-/* const longerSentence =
-  student1 +
-  " and " +
-  student2 +
-  " are amazing and will be taking " +
-  courseName +
-  " next year with " +
-  teacherName;
-
-console.log(longerSentence); */
-/* let longSentence = `${student1} and ${student2} will be taking ${courseName} with ${teacherName} next year`;
-console.log(longSentence);
- */
-
-/////////////////////////////////
-//Numbers Integers
-/* let year = 2020;
-let nextYear = 2020 + 1;
-let past = year / 2;
-let lastYear = year - 1;
-let farFuture = year * 100; */
-//////////////////////////
-//Booleans, null, undefined
-/* let trueStatement = true;
-let falseStatement = false;
-
-let undefinedVar; */
-//console.log(undefinedVar); //do this a lot
-//console.log(nonExistent); //null never declared
-//console.log(truuStatement);
-
-///if/ else if statements
-//let student = "Karen";
-//let age = 17;
-// console.log(student === "Karen"); //true
-// console.log(student === "karen"); //false
-// console.log(student == "karen"); //false
-//console.log(age === "17"); //false
-//console.log(age == "17"); //true
-
-//let age = 16;
-//let name = "Kristy";
-/* console.log(age < 17);
-console.log(age <= 17);
-console.log(age >= 17); */
-//console.log(age == 16 || age == 17); // if age equals 16 OR age == 17 then true
-//console.log(age == 16 && name === "Angel");
-//console.log(age !== 1);
-
-///////If statements
-/* let age = 18;
-if (age < 18) {
-  console.log("You are a child");
-} else if (age >= 18) {
-  console.log("you are an adult now");
-}
- */
-/* let school = "";
-if (school == "elementary") {
-  console.log("you are in elementary school");
-} else if (school == "middle") {
-  console.log("you are in middle school");
-} else {
-  console.log("you are in high school");
-} */
-
-///////////Functions
-/* function test() {
-  console.log("I am a function");
-}
-test(); */
-/* function argument(argument) {
-  console.log(argument);
-}
-//argument("Edis");
-function add(x, y) {
-  return x + y; //return ends the function
-}
-//console.log(add(2, 7));
-let z = function add(x, y) {
-  return x + y; //return ends the function
-};
-z(1, 11);
-console.log(z(1, 11)); */
-////////////////////////////////////Scoping
-//let x = "x";
-//const z = "z"; //99% of the time
-/* const hello = function() {
-  alert("hello");
-};
-const bye = function() {
-  alert("bye");
-  alert("bye");
-  alert("bye");
-  alert("bye");
-  alert("bye");
-  alert("bye");
-  alert("bye");
-};
-
-function beatles() {
-  hello();
-  bye();
-  hello();
-  bye();
-}
-beatles(); */
-
-//global or window scope
-
-/* function hello() {
-  const name = "Jaiyu";
-  console.log(name);
-} */
-/* hello();
-makeFunc();
- */
-
-/* function makeFunc() {
-  //function scope
-  const name = "Sun";
-  function displayName() {
-    alert(name); //still has access to outer variable name
+/* const Caroline = {
+  name: "Caroline",
+  dob: 2004,
+  graduated: false,
+  age: function() {
+    return 2020 - this.dob;
   }
-  return displayName; //returning the inner function
-}
-
-const myFunc = makeFunc();
-myFunc();
+};
  */
 
-//////Arrays
-/* const names = ["Michelle", "Edis", "Richard", "Vincent", "Gisele"];
-
-names.forEach(name => console.log(name)); */
-//arrow function 1) Always returned 2) this is changed
-const students = [
-  "Riya",
-  "Omor",
-  "Alan",
-  "Jaiyu",
-  "Michael",
-  "Lisa",
-  "Richard"
-];
-
-//Filter above array for all students whose name contains less than 5 characters
-
-///challenge 2
-//1) does it "include" "Junshen"
-//2) check for "alan" or "savva" "some"
-
-/////Spread Operator ready?
-/* const numbers = [1, 2, 3];
-const add = function(x, y, z) {
-  return x + y + z;
+/* const Homer = {
+  name: "Homer",
+  age: 32,
+  family: {
+    wife: {
+      name: "Marge"
+    },
+    son: {
+      name: "Bart"
+    }
+  },
+  pets: ["cat", "dog"]
 };
-console.log(add(...numbers)); */
-const numbers = [1, 50, 34, 75, 11];
-const biggestNum = Math.max(...numbers);
-console.log(biggestNum);
+ */
+
+const Haoran = {
+  name: "how",
+  dob: 2001,
+  year: "Senior",
+  age: function() {
+    return 2020 - this.dob;
+  }
+};
+/* const Eric = Haoran; //reference to Haoran
+Eric.name = "Eric";
+const Christian = {};
+Christian.dob = Haoran.dob;
+Christian.dob = 2003; */
+/* const presidents = [
+  { name: "Donald Trump", terms: 1, party: "R" },
+  { name: "Barack Obama", terms: 2, party: "D" },
+  { name: "George W. Bush", terms: 2, party: "R" },
+  { name: "Bill Clinton", terms: 2, party: "D" },
+  { name: "George H.W. Bush", terms: 1, party: "R" },
+  { name: "Ronald Reagan", terms: 2, party: "R" },
+  { name: "Jimmy Carter", terms: 1, party: "D" },
+  { name: "Gerlad Ford", terms: 1, party: "R" },
+  { name: "Richard Nixon", terms: 2, party: "R" },
+  { name: "John F. Kennedy", terms: 1, party: "D" },
+  { name: "Lyndon Johnson", terms: 2, party: "D" },
+  { name: "Dwight Eisenhower", terms: 2, party: "R" }
+];
+ */
+//Challenge Questions
+//1) Filter all presidents, leaving only the Democratic ones
+
+//2)Filter all presidents to leave only one term Republican presidents HINT use If statement
+
+//3) return only the last three presidents
+
+//4) log all dems who served 2 terms. HINT use chain filter, filter and slice
+
+//BONUS write a script to check if LBJ was a 2 term president. IF he was then alert("LBJ served two terms") else alert "LBJ was one and done"
+
+const Caroline = {
+  name: "Caroline",
+  dob: 2004,
+  graduated: false,
+  age: function() {
+    return 2020 - this.dob;
+  }
+};
